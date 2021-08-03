@@ -1,32 +1,28 @@
 <template>
-  <div id="app">
-    <School></School>
-    <Student></Student>
+  <div class="container">
+    <Search></Search>
+    <List></List>
   </div>
 </template>
 
 <script>
-import School from "./components/School.vue";
-import Student from "./components/Student.vue";
+// import axios from "axios";
 
+// 引入组件
+import Search from "./components/Search.vue";
+import List from "./components/List.vue";
 export default {
   name: "App",
   components: {
-    School,
-    Student,
+    Search,
+    List,
   },
+  methods: {},
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  background-color: pink;
-  padding: 20px;
+[v-cloak] {
+  display: none;
 }
 </style>
